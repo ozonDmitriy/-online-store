@@ -1,44 +1,80 @@
-# vue
+# SHOPPE
 
-This template should help get you started developing with Vue 3 in Vite.
+### Интернет-магазин украшений
 
-## Recommended IDE Setup
+SHOPPE — веб-приложение интернет-магазина украшений с современным интерфейсом, лаконичным дизайном и удобной навигацией по каталогу.
 
-[VS Code](https://code.visualstudio.com/) + [Vue (Official)](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Проект разработан с использованием Vue 3 и TypeScript. Основное внимание уделено структуре приложения, организации компонентов и созданию комфортного пользовательского опыта.
 
-## Recommended Browser Setup
+---
 
-- Chromium-based browsers (Chrome, Edge, Brave, etc.):
-  - [Vue.js devtools](https://chromewebstore.google.com/detail/vuejs-devtools/nhdogjmejiglipccpnnnanhbledajbpd) 
-  - [Turn on Custom Object Formatter in Chrome DevTools](http://bit.ly/object-formatters)
-- Firefox:
-  - [Vue.js devtools](https://addons.mozilla.org/en-US/firefox/addon/vue-js-devtools/)
-  - [Turn on Custom Object Formatter in Firefox DevTools](https://fxdx.dev/firefox-devtools-custom-object-formatters/)
+## О проекте
 
-## Customize configuration
+SHOPPE объединяет эстетику ювелирного бренда и функциональность интернет-магазина. Интерфейс построен вокруг каталога товаров и позволяет пользователю взаимодействовать с ассортиментом в едином пространстве.
 
-See [Vite Configuration Reference](https://vite.dev/config/).
+## Технологии
 
-## Project Setup
+- **Vue 3** — разработка пользовательского интерфейса.
+- **TypeScript** — типизация и контроль данных.
+- **Vite** — среда разработки и сборка приложения.
+- **Vue Router** — навигация между страницами.
+- **SCSS** — организация и стилизация CSS.
+- **ESLint** — проверка качества кода.
 
-```sh
+## Установка и запуск
+
+Для локального запуска проекта необходимы Node.js и npm.
+
+Клонируйте репозиторий:
+
+```bash
+git clone https://github.com/ozonDmitriy/-online-store.git shoppe
+cd shoppe
+```
+
+Установите зависимости:
+
+```bash
 npm install
 ```
 
-### Compile and Hot-Reload for Development
+Запустите сервер разработки:
 
-```sh
+```bash
 npm run dev
 ```
 
-### Compile and Minify for Production
+Для production-сборки выполните:
 
-```sh
+```bash
 npm run build
 ```
 
-### Lint with [ESLint](https://eslint.org/)
+Для проверки кода используйте:
 
-```sh
+```bash
 npm run lint
 ```
+
+## Структура проекта
+
+```text
+src/
+├── components/   # Компоненты интерфейса
+├── pages/        # Страницы приложения
+├── router/       # Конфигурация маршрутизации
+├── images/       # Изображения
+├── fonts/        # Шрифты
+├── App.vue       # Корневой компонент
+├── main.js       # Точка входа
+└── global.scss   # Глобальные стили
+```
+
+## Назначение
+
+SHOPPE — учебный проект в области frontend-разработки, направленный на практическое применение Vue 3, TypeScript и современных инструментов веб-разработки.
+
+---
+
+**SHOPPE**  
+_Стиль. Простота. Внимание к деталям._
