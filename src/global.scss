@@ -1,0 +1,45 @@
+body {
+  max-width: 1248px;
+  margin: 0 auto;
+  width: 100%;
+  padding: 0 20px;
+}
+
+@font-face {
+  font-family: 'Allerta Stencil';
+  src: url('/fonts/AllertaStencil-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'DM Sans';
+  src: url('/fonts/DMSans-9ptRegular.woff2') format('woff2');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+:root {
+  --Light-Colors-Accent---Light: #a18a68;
+  --Light-Colors-Dark-gray---Light: #707070;
+  --color--white: #ffffff;
+  --Light-Colors-Gray---Light: #d8d8d8;
+
+  --border--radiusIMG: 8px;
+  --border-Radiusbutton: 6px;
+
+  --font-family-base: 'DM Sans', sans-serif;
+  --font-family-accent: 'Allerta Stencil', sans-serif;
+
+  --container-width: 1248px;
+  --container-padding-x: 15px;
+
+  --transition-duration: 0.2s;
+}
+
+body {
+  font-family: var(--font-family-base);
+  background-color: var(--color--white);
+  overflow-x: hidden;
+}

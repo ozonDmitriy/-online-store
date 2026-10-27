@@ -1,0 +1,58 @@
+.product-icons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 20px;
+  opacity: 0;
+  transition: opacity 0.4s ease;
+  z-index: 2;
+
+  &__icon {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: none;
+    border: none;
+    padding: 0;
+
+    &--cart svg {
+      fill: black;
+      width: 22px;
+      height: 21px;
+    }
+
+    &--active svg {
+      fill: #a18a68;
+    }
+
+    &--view img {
+      width: 25px !important;
+      height: 25px !important;
+    }
+
+    &--heart svg {
+      width: 20px;
+      height: 18px;
+    }
+
+    &--favorite svg path {
+      fill: red;
+      stroke: red;
+    }
+  }
+}
+.image-wrapper:hover > .product-icons,
+.goods__item:hover > .product-icons,
+.goods__container-for-mobile:hover > .product-icons,
+.card-template:hover > .product-icons {
+  opacity: 1;
+}
+
+@media (max-width: 768px) {
+  .product-icons {
+    display: none;
+  }
+}

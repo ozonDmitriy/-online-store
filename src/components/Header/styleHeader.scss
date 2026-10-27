@@ -1,0 +1,175 @@
+.header {
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  max-width: 1248px;
+  width: 100%;
+  height: 42px;
+  flex-shrink: 0;
+  margin: 64px auto 0 auto;
+  &__menu-link {
+    position: relative;
+  }
+
+  &__menu-link.activeShop::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    z-index: 2;
+    bottom: -25.5px;
+    width: 100%;
+    height: 2px;
+    background: black;
+  }
+
+  &__logo,
+  &__catalog-logo {
+    font-family: var(--font-family-accent), sans-serif;
+    text-decoration: none;
+    color: black;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40.5px;
+    display: inline-block;
+
+    &::first-letter {
+      color: #a18a69;
+    }
+  }
+
+  &__mobile-menu {
+    display: none;
+  }
+
+  &__shop-count {
+    position: absolute;
+
+    z-index: 2;
+    text-decoration: none;
+    color: #000;
+    font-family: var(--font-family-accent), sans-serif;
+    font-size: 7px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 53.832%;
+    letter-spacing: -0.14px;
+
+    position: absolute;
+    top: -1px;
+    right: -4px;
+
+    min-width: 14px;
+    height: 14px;
+    padding: 0 3px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &__right {
+    height: 42px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__actions {
+    margin-top: 4px;
+    display: flex;
+    align-items: center;
+    column-gap: 32px;
+  }
+
+  &__menu {
+    &-list {
+      list-style: none;
+    }
+
+    &-item {
+      display: flex;
+      align-items: center;
+
+      &2 {
+        color: black;
+        width: 1px;
+        height: 17px;
+      }
+    }
+
+    &-link {
+      position: relative;
+      cursor: pointer;
+      text-decoration: none;
+      font-family: var(--font-family-base), sans-serif;
+      color: black;
+      font-size: 16px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: 27px;
+
+      &--active::after {
+        content: '';
+        position: absolute;
+        bottom: -28.7px;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        z-index: 2;
+        background-color: #000;
+        border-radius: 2px;
+      }
+    }
+
+    &-separator {
+      margin: 0 78px;
+      color: black;
+      width: 1px;
+      height: 17px;
+    }
+  }
+  @media (max-width: 992px) {
+    &__menu-link.activeShop::after {
+      display: none;
+    }
+  }
+  @media (max-width: 768px) {
+    &__mobile-menu {
+      all: unset;
+      display: inline-block;
+      cursor: pointer;
+      margin-left: 1vw;
+      order: 2;
+    }
+
+    &__logo,
+    &__catalog-logo {
+      font-size: 25px;
+    }
+
+    &__actions {
+      column-gap: 13px;
+    }
+    &__logo-man-button {
+      display: none;
+    }
+
+    &__menu {
+      display: none;
+    }
+
+    &__right {
+      width: auto;
+    }
+  }
+
+  @media (max-width: 500px) {
+    margin-top: 0px;
+    &__logo {
+      font-size: 25px;
+    }
+  }
+}

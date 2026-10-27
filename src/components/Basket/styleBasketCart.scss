@@ -1,0 +1,238 @@
+.modal {
+  position: absolute;
+  top: 140%;
+  right: -1.5%;
+  width: 456px;
+  height: 1015px;
+  background: white;
+  border: 1px solid #707070;
+  z-index: 10;
+  display: block;
+}
+.basket__empty {
+  all: unset;
+  cursor: pointer;
+  font-family: var(--font-family-base);
+  margin-left: 45.6px;
+}
+.overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 9;
+}
+.basket__mobile-back-icon {
+  display: none;
+}
+.header__basket-counter {
+  width: 100px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.header__basket-counter-signs {
+  display: flex;
+  gap: 10px;
+}
+.basket {
+  &__button {
+    all: unset;
+    position: relative;
+    display: inline-block;
+  }
+
+  &__title {
+    margin-top: 72px;
+    margin-left: 45.6px;
+  }
+
+  &__count-header {
+    margin-left: 45.6px;
+    color: #707070;
+  }
+
+  &__discountPercent {
+    color: #d82700;
+    text-decoration: line-through;
+  }
+
+  &__price {
+    color: #a18a68;
+  }
+
+  &__color-size {
+    margin: 0;
+    color: #707070;
+  }
+
+  &__product-title {
+    margin: 0;
+  }
+
+  &__product-price {
+    display: flex;
+    column-gap: 10px;
+  }
+
+  &__btn {
+    all: unset;
+    color: #707070;
+    cursor: pointer;
+  }
+
+  &__countProduct {
+    color: #707070;
+  }
+
+  &__close-product {
+    position: absolute;
+    left: 90%;
+    cursor: pointer;
+  }
+
+  &__scroll {
+    max-height: calc(1122px - 141px - 300px);
+    overflow-y: auto;
+    flex-grow: 1;
+  }
+}
+
+.basketCart {
+  position: relative;
+  display: flex;
+  margin-left: 45.6px;
+  column-gap: 20px;
+  margin-bottom: 22px;
+}
+.header__basket-button {
+  width: 364.8px;
+  height: 53px;
+  flex-shrink: 0;
+  margin-left: 45.6px;
+  margin-right: 45.6px;
+
+  border-radius: 4px;
+  border: 1px solid black;
+  background-color: var(--color--white);
+}
+.header__basket-button-view {
+  all: unset;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+  font-family: var(--font-family-base);
+}
+.basketImage {
+  width: 172px;
+  height: 136px;
+}
+.header__basket-total {
+  display: flex;
+  column-gap: 140px;
+}
+.header__basket-totalCount {
+  margin-left: 46.5px;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 27px;
+  font-family: var(--font-family-base);
+  color: #000;
+}
+.header__basket-end {
+  position: absolute;
+  bottom: 5%;
+}
+.header {
+  &__basket-counter {
+    margin-top: 0;
+  }
+}
+@media (max-width: 540px) {
+  .modal {
+    position: fixed;
+
+    top: 0%;
+    right: 0%;
+    width: 100%;
+    height: 100%;
+
+    background: white;
+    border: 1px solid #707070;
+    z-index: 10;
+    display: block;
+  }
+  .basket__empty {
+    margin-left: 16px;
+  }
+  .basket__count-header {
+    margin-left: 16px;
+    margin-top: 60px;
+  }
+
+  .basket__mobile-back-icon {
+    display: block;
+    position: absolute;
+    margin-left: 16px;
+    margin-top: 20px;
+  }
+  .basket__scroll {
+    max-height: calc(100% - 300px);
+  }
+  .basket__title {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    margin: 0;
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .basketCart {
+    margin-left: 16px;
+  }
+  .basket__mobile-flex {
+    display: flex;
+    margin-top: 13px;
+    align-items: center;
+    position: relative;
+  }
+  .header__basket-end {
+    width: 100% !important;
+    bottom: 4%;
+  }
+  .header__basket-total {
+    margin-left: 0px;
+    margin-right: 16px;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header__basket-totalCount {
+    margin-left: 16px;
+  }
+  .header__basket-button {
+    width: calc(100% - 32px);
+    margin-left: 16px;
+    margin-right: 16px;
+  }
+}
+@media (max-width: 353px) {
+  .header__basket-totalCost {
+    font-size: 12px;
+  }
+  .header__basket-totalCount {
+    font-size: 12px;
+  }
+  .header__basket-total {
+    align-items: center;
+  }
+  .basketImage {
+    width: 136px;
+  }
+}

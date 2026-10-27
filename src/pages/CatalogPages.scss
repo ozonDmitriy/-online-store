@@ -1,0 +1,23 @@
+.catalog__hr {
+  position: relative;
+  border: none;
+  background-color: #d8d8d8;
+
+  width: 100%;
+  height: 1px;
+  margin-top: 17px;
+}
+
+.rigth__catalog {
+  display: flex;
+}
+@media (max-width: 1268px) {
+  .rigth__catalog {
+    display: block;
+  }
+}
+@media (max-width: 768px) {
+  .catalog__hr {
+    display: none;
+  }
+}

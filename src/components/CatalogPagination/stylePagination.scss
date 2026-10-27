@@ -1,0 +1,105 @@
+.footer__page-number {
+  margin-top: 200px;
+  max-width: 1248px;
+  width: 100%;
+  margin-left: 170px;
+
+  .footer__number-menu-list {
+    display: flex;
+    justify-content: center;
+
+    column-gap: 11px;
+    list-style: none;
+    padding: 0;
+
+    .footer__number-menu-button,
+    .footer__number-menu-button-prev,
+    .footer__number-menu-button-next {
+      appearance: none;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      background: none;
+      border: none;
+      outline: none;
+      width: 60px;
+      height: 60px;
+      flex-shrink: 0;
+      border-radius: 10px;
+      background-color: #efefef;
+      color: #000;
+      font-family: var(--font-family-base), sans-serif;
+      font-size: 20px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      cursor: pointer;
+    }
+
+    .footer__number-menu-button-prev,
+    .footer__number-menu-button-next {
+      width: 98px;
+      height: 60px;
+    }
+
+    .footer__number-menu-button-prev.disabled {
+      cursor: not-allowed;
+      opacity: 0.7;
+    }
+
+    .footer__number-menu-button.active {
+      color: #fff;
+      background-color: #a18a68;
+    }
+
+    .footer__number-menu-button:not(.active):hover,
+    .footer__button-next:hover {
+      opacity: 0.8;
+    }
+  }
+}
+
+.footer__footer-line {
+  width: 100%;
+  height: 1px;
+  background-color: #d8d8d8;
+  margin-top: 133px;
+}
+
+.footer__business-name-footer1 {
+  margin-top: 58px;
+  margin-bottom: 74px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+
+  .footer__data-name-link1 {
+    text-decoration: none;
+    color: black;
+    font-family: var(--font-family-base), sans-serif;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 27px;
+  }
+}
+@media (max-width: 1268px) {
+  .footer__number-menu-list {
+    max-width: 100%;
+  }
+
+  .footer__page-number {
+    margin-left: 0;
+    margin-top: 20px;
+    max-width: none;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 768px) {
+  .footer__page-number {
+    display: none;
+  }
+}

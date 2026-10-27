@@ -1,0 +1,14 @@
+<!--?xml version="1.0" encoding="UTF-8"?-->
+<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48">
+  <defs>
+    <mask id="cross-mask">
+      <rect width="48" height="48" fill="white"></rect>
+      <g fill="none" stroke="black" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="16" y1="16" x2="32" y2="32"></line>
+        <line x1="32" y1="16" x2="16" y2="32"></line>
+      </g>
+    </mask>
+  </defs>
+
+  <circle cx="24" cy="24" r="24" fill="#A18A68" mask="url(#cross-mask)"></circle>
+</svg>

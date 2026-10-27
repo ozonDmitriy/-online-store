@@ -1,0 +1,15 @@
+.cart__hr {
+  position: relative;
+  border: none;
+  background-color: #d8d8d8;
+
+  width: 100%;
+  height: 1px;
+  margin-top: 17px;
+}
+
+@media (max-width: 992px) {
+  .cart__hr {
+    display: none;
+  }
+}
